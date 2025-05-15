@@ -8,9 +8,12 @@ jobs:
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Cypress run plain
         uses: cypress-io/github-action@v6
+        env:
+          UI_USERNAME: ${{ secrets.CYPRESS_UI_USERNAME }}
+          UI_PASSWORD: ${{ secrets.CYPRESS_UI_PASSWORD }}
         with: 
-          command: npm run test:03
+          command: npm run test:04
 
 
