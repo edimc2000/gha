@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm t", 
     "test:01": "npx cypress run --spec cypress/e2e/1-getting-started/todo.cy.js",
-    "test:02": "npx cypress run --spec cypress/e2e/project02.cy.js"
+    "test:02": "npx cypress run --spec cypress/e2e/project02.cy.js --env UI_USERNAME=TechGlobal,UI_PASSWORD=Test1234"
   },
   "author": "emc",
   "license": "ISC",
