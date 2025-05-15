@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm t", 
-    "test:01": "npx cypress run --spec cypress/e2e/todo.cy.js"
+    "test:01": "npx cypress run --spec cypress/e2e/1-getting-started/todo.cy.js"
   },
   "author": "emc",
   "license": "ISC",
