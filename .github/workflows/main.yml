@@ -10,10 +10,13 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run plain
         uses: cypress-io/github-action@v6
+        with: 
+          command: npm run test:02 
+
+      - name: Cypress run secret
+        uses: cypress-io/github-action@v6
         env:
           UI_USERNAME: ${{ secrets.CYPRESS_UI_USERNAME }}
           UI_PASSWORD: ${{ secrets.CYPRESS_UI_PASSWORD }}
         with: 
           command: npm run test:04 
-
-
